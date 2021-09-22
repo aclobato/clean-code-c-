@@ -56,4 +56,4 @@ is 80 and it never alters.
 
 I analysed this repo according to the clean code standards on [Better Code Hub](https://bettercodehub.com) just to get an independent opinion of how bad the code is.
 
-[![BCH compliance](https://bettercodehub.com/edge/badge/aclobato/clean-code-csharp?branch=master)](https://bettercodehub.com/)
+[![BCH compliance](https://bettercodehub.com/edge/badge/aclobato/clean-code-csharp?branch=practice-1)](https://bettercodehub.com/)
