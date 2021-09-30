@@ -21,6 +21,15 @@ namespace GildedRoseKata
                         if (Items[i].Name != "Sulfuras, Hand of Ragnaros")
                         {
                             Items[i].Quality = Items[i].Quality - 1;
+
+
+                            if (Items[i].Quality > 0)
+                            {
+                                if (Items[i].Name == "Conjured Mana Cake")
+                                {
+                                    Items[i].Quality = Items[i].Quality - 1;
+                                }
+                            }
                         }
                     }
                 }
@@ -67,6 +76,14 @@ namespace GildedRoseKata
                                 if (Items[i].Name != "Sulfuras, Hand of Ragnaros")
                                 {
                                     Items[i].Quality = Items[i].Quality - 1;
+
+                                    if (Items[i].Quality > 0)
+                                    {
+                                        if (Items[i].Name == "Conjured Mana Cake")
+                                        {
+                                            Items[i].Quality = Items[i].Quality - 1;
+                                        }
+                                    }
                                 }
                             }
                         }
