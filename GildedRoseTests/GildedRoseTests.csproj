@@ -14,6 +14,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\3 - Domain\GildedRose.Domain\GildedRose.Domain.csproj" />
     <ProjectReference Include="..\GildedRose\GildedRose.csproj" />
   </ItemGroup>
 
