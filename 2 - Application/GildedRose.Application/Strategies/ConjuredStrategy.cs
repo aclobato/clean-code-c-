@@ -3,12 +3,11 @@ using GildedRoseKata.Domain.Models;
 
 namespace GildedRose.Application.Strategies
 {
-    public class ConjuredStrategy : IQualityUpdatingStrategy
+    public class ConjuredStrategy : BaseQualityUpdatinfStrategy
     {
-        public void UpdateItemQuality(Item item)
+        protected override int GetMultiplerQualityUpdating(Item item)
         {
-            item.Quality -= 1;
-            item.SellIn -= 1;
-        }
+            return 2 * base.GetMultiplerQualityUpdating(item);
+        }  
     }
 }

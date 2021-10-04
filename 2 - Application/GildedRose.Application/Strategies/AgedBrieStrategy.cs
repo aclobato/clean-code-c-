@@ -3,12 +3,11 @@ using GildedRoseKata.Domain.Models;
 
 namespace GildedRose.Application.Strategies
 {
-    public class AgedBrieStrategy : IQualityUpdatingStrategy
+    public class AgedBrieStrategy : BaseQualityUpdatinfStrategy
     {
-        public void UpdateItemQuality(Item item)
+        protected override int GetMultiplerQualityUpdating(Item item)
         {
-            item.Quality -= 1;
-            item.SellIn -= 1;
+            return -1 * base.GetMultiplerQualityUpdating(item);
         }
     }
 }

@@ -3,12 +3,16 @@ using GildedRoseKata.Domain.Models;
 
 namespace GildedRose.Application.Strategies
 {
-    public class SulfurasStrategy : IQualityUpdatingStrategy
+    public class SulfurasStrategy : BaseQualityUpdatinfStrategy
     {
-        public void UpdateItemQuality(Item item)
+        protected override int GetNewQualityValue(Item item)
         {
-            item.Quality -= 1;
-            item.SellIn -= 1;
+            return item.Quality;
+        }
+
+        protected override int GetNewSellInValue(Item item)
+        {
+            return item.SellIn;
         }
     }
 }
