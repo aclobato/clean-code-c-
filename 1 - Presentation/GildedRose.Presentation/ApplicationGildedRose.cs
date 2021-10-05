@@ -7,7 +7,7 @@ namespace GildedRoseKata
 {
     public class ApplicationGildedRose
     {
-        private IQualityUpdatingService _qualityUpdatingService;
+        private readonly IQualityUpdatingService _qualityUpdatingService;
 
         public ApplicationGildedRose(IQualityUpdatingService qualityUpdatingService)
         {
