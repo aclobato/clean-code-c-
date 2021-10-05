@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <StartupObject>GildedRoseKata.Program</StartupObject>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Autofac" Version="6.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\2 - Application\GildedRose.Application\GildedRose.Application.csproj" />
+    <ProjectReference Include="..\..\3 - Domain\GildedRose.Domain\GildedRose.Domain.csproj" />
+    <ProjectReference Include="..\..\4 - Infraestructure\4.2 - CrossCutting\GildedRose.Infraestructure.CrossCutting.IOC\GildedRose.Infraestructure.CrossCutting.IOC.csproj" />
+  </ItemGroup>
+
+</Project>
